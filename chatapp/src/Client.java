@@ -16,14 +16,12 @@ public class Client {
 
             Scanner sc = new Scanner(System.in);
 
-            System.out.println(reader.readLine()); // "Enter your nickname: "
+            System.out.println(reader.readLine());
             nickname = sc.nextLine();
             writer.println(nickname);
 
-            // Thread to listen to server messages
             new Thread(new ReceiveMessages()).start();
 
-            // Main thread to send messages
             while (true) {
                 String msg = sc.nextLine();
                 writer.println(encrypt(msg));
@@ -43,7 +41,6 @@ public class Client {
         }
     }
 
-    // Simple Caesar cipher
     private String encrypt(String message) {
         StringBuilder sb = new StringBuilder();
         for (char c : message.toCharArray()) {
@@ -78,3 +75,4 @@ public class Client {
         new Client("localhost", 12345);
     }
 }
+
