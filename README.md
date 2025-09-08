@@ -13,6 +13,8 @@ The application runs entirely in the console (no GUI) and supports:
 - ✅ Basic message encryption (Caesar Cipher)
 
 ---
+## Screenshot:
+![photo](Screenshot 2025-09-08 192053.png)
 
 ## 🛠️ Tech Stack
 - **Language:** Java  
