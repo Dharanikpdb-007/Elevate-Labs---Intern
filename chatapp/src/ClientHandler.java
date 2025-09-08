@@ -30,7 +30,7 @@ public class ClientHandler implements Runnable {
             while ((message = reader.readLine()) != null) {
                 message = decrypt(message);
 
-                if (message.startsWith("@")) { // private message
+                if (message.startsWith("@")) {
                     String[] splitMsg = message.split(" ", 2);
                     if (splitMsg.length < 2) {
                         writer.println("Invalid private message format. Use @nickname message");
@@ -39,7 +39,7 @@ public class ClientHandler implements Runnable {
                     String targetNick = splitMsg[0].substring(1);
                     String privateMsg = splitMsg[1];
                     sendPrivateMessage(targetNick, privateMsg);
-                } else { // group message
+                } else { 
                     System.out.println(nickname + ": " + message);
                     Server.broadcast(nickname + ": " + message, this);
                 }
@@ -81,7 +81,6 @@ public class ClientHandler implements Runnable {
         }
     }
 
-    // Simple Caesar cipher
     private String encrypt(String message) {
         StringBuilder sb = new StringBuilder();
         for (char c : message.toCharArray()) {
@@ -98,3 +97,4 @@ public class ClientHandler implements Runnable {
         return sb.toString();
     }
 }
+
