@@ -14,7 +14,9 @@ The application runs entirely in the console (no GUI) and supports:
 
 ---
 ## Screenshot:
-![photo](Screenshot 2025-09-08 192053.png)
+![photo](https://github.com/Dharanikpdb-007/Elevate-Labs---Intern/blob/886d38f4d3dcf0710be311eae152f15bd6e259e6/Screenshot%20(35).png)
+![photo](https://github.com/Dharanikpdb-007/Elevate-Labs---Intern/blob/886d38f4d3dcf0710be311eae152f15bd6e259e6/Screenshot%202025-09-08%20192039.png)
+![photo](https://github.com/Dharanikpdb-007/Elevate-Labs---Intern/blob/886d38f4d3dcf0710be311eae152f15bd6e259e6/Screenshot%202025-09-08%20192053.png)
 
 ## 🛠️ Tech Stack
 - **Language:** Java  
